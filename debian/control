@@ -9,6 +9,7 @@ Homepage: https://pardus.org.tr
 
 Package: eta-soundfix
 Architecture: amd64
+Pre-Depends: kmix, pulseaudio
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Description: Sound optimization for Fatih IWBs
  Some IWB frames that provided by Vestel has some sound configuration

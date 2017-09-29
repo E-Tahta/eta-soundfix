@@ -1,14 +1,11 @@
 # Makefile
 
-all: build
-
-build:
-	@echo "Nothing to build."
+all: install
 
 install:
 	# Installing executables
 	mkdir -p $(DESTDIR)/usr/share/eta-sound-fixer
-        mkdir -p $(DESTDIR)/usr/bin
+	mkdir -p $(DESTDIR)/usr/bin
 	cp -a eta_sound_fixer $(DESTDIR)/usr/share/eta-sound-fixer/
 	ln -s $(DESTDIR)/usr/share/eta-sound-fixer/eta_sound_fixer $(DESTDIR)/usr/bin/eta_sound_fixer 
 
@@ -23,7 +20,6 @@ uninstall:
 
 	# Uninstalling desktop files
 	rm -f $(DESTDIR)/etc/xdg/autostart/eta-sound-fixer.desktop
-clean:
 
-reinstall: uninstall install
+.PHONY: install uninstall
 

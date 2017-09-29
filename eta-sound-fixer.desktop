@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=ETAP pulseaudio fixer
+Exec=/usr/bin/eta_sound_fixer
+Icon=
+Terminal=false
+Type=Application
+Categories=
+GenericName=
+X-KDE-Autostart-enabled=true

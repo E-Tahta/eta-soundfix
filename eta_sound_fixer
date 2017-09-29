@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+    sleep 5
+if lsusb | grep -qE "(2621:2201|2621:4501)" ; then
+    while [ ! `pgrep pulseaudio` ]
+    do
+        sleep 1
+    done
+    pacmd set-card-profile 1 off
+    if [ `pgrep kmix` ]; then
+        killall kmix
+        /usr/bin/kmix &
+    fi
+fi

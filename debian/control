@@ -1,0 +1,16 @@
+Source: eta-soundfix
+Section: utils
+Priority: optional
+Maintainer: Yunusemre Senturk <yunusemre.senturk@pardus.org.tr>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://pardus.org.tr
+
+
+Package: eta-soundfix
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Description: Sound optimization for Fatih IWBs
+ Some IWB frames that provided by Vestel has some sound configuration
+ issues. This package has designed to fix the issue.
+  

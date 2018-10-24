@@ -1,3 +1,10 @@
+eta-soundfix (0.2.3) stable; urgency=medium
+
+  * Add README.md
+  * Pardus CI integration
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Wed, 24 Oct 2018 10:04:39 +0300
+
 eta-soundfix (0.2.2) unstable; urgency=medium
 
   * Fix Makefile install issues
